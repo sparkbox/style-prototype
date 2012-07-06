@@ -1,0 +1,17 @@
+.wrapper {
+	.main & {
+		position: relative;
+		margin-top: $padding / 2;
+	}
+}
+
+.typography {
+	position: absolute;
+
+	left: $padding;
+	top: $padding;
+}
+
+.swatches {
+	padding-left: 20em + $padding * 2;
+}

@@ -1,0 +1,75 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+/* TEAM */
+  President: Ben Callahan
+  Site: http://seesparkbox.com
+  Twitter: bencallahan
+  Location: Dayton, OH
+  
+  Creative Director: Jeremy Loyd
+  Site: http://seesparkbox.com
+  Twitter: jeremyloyd
+  Location: Dayton, OH
+  
+  Brand Analyst: Jän Ostendorf 
+  Site: http://seesparkbox.com
+  Twitter: jpostendorf
+  Location: Dayton, OH
+  
+  Content Strategist: Drew Clemes 
+  Site: http://seesparkbox.com
+  Twitter: drewclemens
+  Location: Dayton, OH
+  
+  Technical Director: Rob Harr 
+  Site: http://seesparkbox.com
+  Twitter: robertharr
+  Location: Dayton, OH
+
+  Web Developer: Andy Rossi
+  Site: http://seesparkbox.com
+  Twitter: andrewrocco
+  Location: Dayton, OH
+  
+  Software Engineer: Rob Tarr
+  Site: http://seesparkbox.com
+  Twitter: robtarr
+  Location: Dayton, OH
+  
+  Office Manager: Dom Richardson
+  Site: http://seesparkbox.com
+  Location: Dayton, OH
+  
+
+/* THANKS */
+  Names (& URL):
+
+/* SITE */
+  Standards: HTML5, CSS3
+  Components: Modernizr, jQuery
+  Software:
+
+     MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+  MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+  MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+  MMMMMMMMMMMMMMMMMMMMMMMMMMMMmMMMMMMMMMMMMMMMMMMMMM
+  MMMMMMMMMMMMMMMMMMMMMMMMMMh-yMMMMMMMMMMMMMMMMMMMMM
+  MMMMMMMMMMMMMMMMMMMMMMMMy. -MMMMMMMMMMMMMMMMMMMMMM
+  MMMMMMMMMMMMMMMMMMMMMNs.   dMMMMMMMMMMMMMMMMMMMMMM
+  MMMMMMMMMMMMMMMMMMMNo`    +MMMMMMMMMMMMMMMMMMMMMMM
+  MMMMMMMMMMMMMMMMMN+`      yNMMMMMMMMMMMMMMMMMMMMMM
+  MMMMMMMMMMMMMMMN+           `:oymMMMMMMMMMMMMMMMMM
+  MMMMMMMMMMMMMMMMNds/-            /NMMMMMMMMMMMMMMM
+  MMMMMMMMMMMMMMMMMMMMMMds       /dMMMMMMMMMMMMMMMMM
+  MMMMMMMMMMMMMMMMMMMMMMMo     +mMMMMMMMMMMMMMMMMMMM
+  MMMMMMMMMMMMMMMMMMMMMMm   `oNMMMMMMMMMMMMMMMMMMMMM
+  MMMMMMMMMMMMMMMMMMMMMM: `oNMMMMMMMMMMMMMMMMMMMMMMM
+  MMMMMMMMMMMMMMMMMMMMMy.sMMMMMMMMMMMMMMMMMMMMMMMMMM
+  MMMMMMMMMMMMMMMMMMMMMdMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+  MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+  MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+  MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+     MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM

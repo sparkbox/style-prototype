@@ -1,0 +1,40 @@
+// SCSS version of the LESS-based Semantic Grid System at semantic.gs
+
+// Defaults which you can freely override
+$column-width: 60;
+$gutter-width: 20;
+$columns: 12;
+$gridsystem-width: ($column-width*$columns) + ($gutter-width*$columns);
+
+// Set $grid-type to 1% for a fluid layout
+$grid-type: 1%;
+
+body {
+	width: 100%;
+	float: left;
+}
+
+@mixin row($columns:$columns) {
+	display: inline-block;
+	overflow: hidden;
+	@if $grid-type == 1% {
+	  width: (($gutter-width + $gridsystem-width) / $gridsystem-width) * 100%;
+	  margin: 0 ((($gutter-width*.5) / $gridsystem-width) * -1) * 100%;
+	} @else {
+	  width: ($gutter-width + $gridsystem-width);
+	  margin: 0 (($gutter-width*.5)*-1px);
+	}
+}
+
+@mixin column($x,$columns:$columns) {
+	display: inline;
+	float: left;
+	overflow: hidden;
+	@if $grid-type == 1% {
+	  width: (((($gutter-width + $column-width)*$x) - $gutter-width) / $gridsystem-width) * 100%;
+	  margin: 0 (($gutter-width*.5) / $gridsystem-width) * 100%;
+	} @else {
+	  width: ((($gutter-width + $column-width)*$x) - $gutter-width) * 1px;
+	  margin: 0 ($gutter-width*.5) * 1px;
+	}
+}

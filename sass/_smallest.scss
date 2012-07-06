@@ -25,20 +25,18 @@ header {
 	width: 100%;
 
 	background-color: black;
-	border-bottom: 3px solid #c3c3c3;
 
 	.wrapper {
 		@include clearfix;
 
 		position: relative;
 		max-width: 35em;
-		padding: 1em 0;
+		padding: 2em 0;
 	}
 
 	img {
 		display: block;
-		width: 100%;
-		max-width: 300px;
+		max-width: 154px;
 		margin: 0 auto;
 	}
 

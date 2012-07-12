@@ -10,6 +10,7 @@ body {
 
 .wrapper {
 	margin: 0 auto;
+	max-width: $page-width;
 
 	.main & {
 		@include clearfix;
@@ -64,12 +65,12 @@ nav {
 /* TYPOGRAPHY */
 
 .typography {
-	max-width: 20em;
+	padding: 0;
 	margin: 0 auto;
 
 	div {
 		background-color: white;
-		padding: $padding;
+		padding: 5%;
 	}
 }
 
@@ -139,7 +140,7 @@ button {
 /* SWATCHES */
 
 .swatches {
-	padding: $padding;
+	padding: 5%;
 	margin: 0 auto;
 }
 
@@ -147,7 +148,7 @@ button {
 
 .colors {
 	float: left;
-	padding-bottom: 8%;
+	padding-bottom: $swatch-margin * 3;
 	width: 100%;
 
 	ul {
@@ -155,18 +156,23 @@ button {
 
 		padding: 0;
 		margin: 0;
+	}
 		
-		li {
-			@include hide-text;
+	li {
+		@include hide-text;
 
-			list-style-type: none;
+		list-style-type: none;
 
-			float: left;
-			width: 31%;
-			padding-bottom: 18%;
-			margin: 0 1%;
+		float: left;
+		width: ( 100% - ( $swatch-margin * 2 ) ) / $num-colors;
+		padding-bottom: 18%;
+		margin: 0;
 
-			background-color: #222;
+		background-color: #222;
+
+		&:nth-child(#{$num-colors}n+1),
+		&:nth-child(#{$num-colors}n+2) {
+			margin-right: $swatch-margin;
 		}
 	}
 
@@ -185,37 +191,43 @@ button {
 	ul {
 			margin: 0;
 			padding: 0;
+	}
 
-		li {
+	li {
+		@include hide-text;
 
-			list-style-type: none;
+		list-style-type: none;
 
-			float: left;
-			overflow: hidden;
-			margin: 0 1% 2% 1%;
-			
-			background-color: $neutral;
+		float: left;
+		overflow: hidden;
+		margin: 0 0 $swatch-margin 0;
+		
+		background-color: $neutral;
 
-			&.fixed {
-				width: 48%;
-				height: 0;
-				padding-bottom: 48%;
-			}
+		&.fixed {
+			width: ( 100% - $swatch-margin ) / 2;
+			height: 0;
+			padding-bottom: 49%;
+		}
 
-			&.fixed.a {
-				background: $neutral url(../img/social-icons.png) no-repeat center;
-			}
-			&.fixed.b {
-				background: black url(../img/br-texture.png) repeat -50%;
-			}
+		&.fixed:nth-child(odd) {
+			margin-right: $swatch-margin;
+		}
 
-			&.scaled.a {
-				width: 98%;
-			}
+		&.fixed.a {
+			background: $neutral url(../img/social-icons.png) no-repeat center;
+			background-size: 35%;
+		}
+		&.fixed.b {
+			background: black url(../img/br-texture.png) repeat -50%;
+		}
 
-			img {
-				width: 100%;
-			}
+		&.scaled.a {
+			width: 100%;
+		}
+
+		img {
+			width: 100%;
 		}
 	}
 }

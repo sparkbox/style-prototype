@@ -1,8 +1,11 @@
 @import "mixins";
 @import "variables";
 @import "reset";
-@import "grid";
 @import "smallest";
+
+@media (min-width: 400px){
+	@import "400";
+}
 
 @media (min-width: 450px){
 	@import "450";

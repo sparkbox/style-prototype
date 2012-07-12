@@ -10,6 +10,11 @@
 
 	left: $padding;
 	top: $padding;
+	padding: 0;
+
+	div {
+		max-width: 20em;
+	}
 }
 
 .swatches {

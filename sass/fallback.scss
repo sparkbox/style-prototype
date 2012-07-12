@@ -1,7 +1,11 @@
 @import "mixins";
 @import "variables";
 @import "reset";
-@import "grid";
 
-// List all resolution styles you wish to serve to IE here
+// List all resolution styles you wish to serve
+// to browsers without media query support
 @import "smallest";
+@import "400";
+@import "450";
+@import "700";
+@import "940";

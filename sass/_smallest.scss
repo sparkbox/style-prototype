@@ -164,15 +164,14 @@ button {
 		list-style-type: none;
 
 		float: left;
-		width: ( 100% - ( $swatch-margin * 2 ) ) / $num-colors;
+		width: ( 100% - ( $swatch-margin * ($num-colors - 1) ) ) / $num-colors;
 		padding-bottom: 18%;
-		margin: 0;
+		margin: 0 $swatch-margin 0 0;
 
 		background-color: #222;
 
-		&:nth-child(#{$num-colors}n+1),
-		&:nth-child(#{$num-colors}n+2) {
-			margin-right: $swatch-margin;
+		&:last-child {
+			margin-right: 0;
 		}
 	}
 

@@ -509,6 +509,8 @@ button {
     padding-bottom: 18%;
     margin: 0 2% 0 0;
     background-color: #222; }
+    .lt-ie9 .colors li {
+      width: 31%; }
     .colors li:last-child {
       margin-right: 0; }
   .colors .primary {
@@ -569,6 +571,8 @@ button {
         /* dimensions: 638 x 405 */
         max-width: 638px;
         width: 90%; }
+        .lt-ie9 .details li.c img {
+          width: auto; }
 
 @media (min-width: 400px) {
   .swatches {
@@ -589,7 +593,9 @@ button {
     max-width: 20em; }
 
   .swatches {
-    padding-left: 24em; } }
+    padding-left: 24em; }
+    .lt-ie9 .swatches {
+      padding-left: 30em; } }
 @media (min-width: 940px) {
   .colors {
     padding: 0 4% 0 2em;

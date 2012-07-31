@@ -17,4 +17,11 @@
 
 .swatches {
 	padding-left: 20em + $padding * 2;
+
+  .lt-ie9 & {
+    padding-left: 26em + $padding * 2;
+  }
+  .lt-ie8 & {
+    width: 64%;
+  }
 }

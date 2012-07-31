@@ -1,26 +1,27 @@
 * {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
 body {
 	font: 100%/1.5 $helvetica;
 
-	background: url(../img/diamond-pattern.png);
+	background: #e4e4e4;
 }
 
 .wrapper {
+  display: block;
 	margin: 0 auto;
 	max-width: $page-width;
 
 	.main & {
-		@include clearfix;
 	}
 }
 
 /* HEADER & LOGO */
 
 header {
-	@include clearfix;
 
 	float: left;
 	width: 100%;
@@ -28,7 +29,6 @@ header {
 	background-color: black;
 
 	.wrapper {
-		@include clearfix;
 
 		position: relative;
 		max-width: 35em;
@@ -53,7 +53,6 @@ nav {
 /* MAIN */
 
 .main {
-	@include clearfix;
 
 	float: left;
 	width: 100%;
@@ -65,13 +64,9 @@ nav {
 /* TYPOGRAPHY */
 
 .typography {
-	padding: 0;
-	margin: 0 auto;
-
-	div {
+    float: left;
 		background-color: white;
-		padding: 5%;
-	}
+		padding: 5% 5% 2%;
 }
 
 /* PRIMARY HEADING */
@@ -79,25 +74,22 @@ nav {
 h1 {
 	margin: 0 0 0.5em 0;
 
-	font-family: 'Yanone Kaffeesatz', sans-serif;
-	font-size: 2.5em;
-	font-weight: 700;
-	letter-spacing: 0.05em;
+	font-family: facitweb-1, sans-serif;
+	font-size: 1.5em;
+	font-weight: 400;
 	line-height: 1;
-	text-transform: uppercase;
 
-	color: $secondary;
+	color: $neutral;
 }
 
 /* PARAGRAPH */
 
 p {
 	font-family: Helvetica, Arial, sans-serif;
-	font-size: 0.95em;
+	font-size: 0.9em;
 	line-height: 1.6;
-	letter-spacing: 0.035em;
 
-	margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 /* BUTTON */
@@ -122,24 +114,31 @@ button {
 /* ICONS */
 
 .icons {
-	@include clearfix;
-
 	padding: 0;
 	margin: 4% auto;
+  text-align: center;
+  float: left;
+  width: 100%;
 
 	li {
-		@include hide-text;
-
+    display: inline-block;
 		list-style-type: none;
 		text-align: center;
-		float: left;
-		width: 33%;
+		width: 80px;
+
+    opacity: 0.5;
+
+    &:hover {
+      opacity: 1;
+    }
 	}
 }
 
 /* SWATCHES */
 
 .swatches {
+  float: left;
+  width: 100%;
 	padding: 5%;
 	margin: 0 auto;
 }
@@ -152,7 +151,6 @@ button {
 	width: 100%;
 
 	ul {
-		@include clearfix;
 
 		padding: 0;
 		margin: 0;
@@ -193,40 +191,73 @@ button {
 	}
 
 	li {
-		@include hide-text;
-
 		list-style-type: none;
 
 		float: left;
 		overflow: hidden;
 		margin: 0 0 $swatch-margin 0;
+    position: relative;
 		
-		background-color: $neutral;
+    &.a, &.b {
+      width: 49%;
+      height: 0;
+      padding-bottom: 50%;
+    }
 
-		&.fixed {
-			width: ( 100% - $swatch-margin ) / 2;
-			height: 0;
-			padding-bottom: 49%;
-		}
+    &.a {
+      /* monitor icon */
 
-		&.fixed:nth-child(odd) {
-			margin-right: $swatch-margin;
-		}
+      margin-right: $swatch-margin / 2;
 
-		&.fixed.a {
-			background: $neutral url(../img/social-icons.png) no-repeat center;
-			background-size: 35%;
-		}
-		&.fixed.b {
-			background: black url(../img/br-texture.png) repeat -50%;
-		}
+      background: black url('../img/texture-bg.jpg') repeat-x -60% top;
 
-		&.scaled.a {
-			width: 100%;
-		}
+      img {
+        /* dimensions: 91 x 76 */
 
-		img {
-			width: 100%;
-		}
+        position: absolute;
+        max-width: 80%;
+
+        top: 50%;
+        margin-top: -38px;
+
+        left: 50%;
+        margin-left: -45px;
+      }
+    }
+
+    &.b { 
+      /* juggler */
+
+      margin-left: $swatch-margin / 2;
+
+      background: $secondary;
+
+      img {
+        /* dimensions: 455 x 409 */
+
+        position: absolute;
+        bottom: 0;
+        left: 7%;
+        width: 90%;
+        min-width: 220px;
+        max-width: 455px;
+      }
+    }
+
+    &.c {
+      /* happy devices */
+
+      width: 100%;
+      background: $primary;
+      padding: 2em 0;
+      text-align: center;
+
+
+      img {
+        /* dimensions: 638 x 405 */
+        max-width: 638px;
+        width: 90%;
+      }
+    }
 	}
 }

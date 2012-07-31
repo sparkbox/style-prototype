@@ -8,12 +8,20 @@ body {
 	font: 100%/1.5 $helvetica;
 
 	background: #e4e4e4;
+
+  .lt-ie9 & {
+    min-width: $page-width-fallback;
+  }
 }
 
 .wrapper {
   display: block;
 	margin: 0 auto;
 	max-width: $page-width;
+
+	.lt-ie9 & {
+    width: $page-width-fallback;
+   }
 
 	.main & {
 	}
@@ -125,6 +133,11 @@ button {
 		list-style-type: none;
 		text-align: center;
 		width: 80px;
+
+    .lt-ie8 & {
+      display: block;
+      float: left;
+    }
 
     opacity: 0.5;
 
@@ -262,7 +275,6 @@ button {
         max-width: 638px;
         width: 90%;
         .lt-ie9 & {
-          width: auto;
         }
       }
     }

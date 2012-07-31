@@ -402,11 +402,15 @@ td {
 body {
   font: 100%/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   background: #e4e4e4; }
+  .lt-ie9 body {
+    min-width: 960px; }
 
 .wrapper {
   display: block;
   margin: 0 auto;
   max-width: 100%; }
+  .lt-ie9 .wrapper {
+    width: 960px; }
 
 /* HEADER & LOGO */
 header {
@@ -481,6 +485,9 @@ button {
     text-align: center;
     width: 80px;
     opacity: 0.5; }
+    .lt-ie8 .icons li {
+      display: block;
+      float: left; }
     .icons li:hover {
       opacity: 1; }
 
@@ -571,8 +578,6 @@ button {
         /* dimensions: 638 x 405 */
         max-width: 638px;
         width: 90%; }
-        .lt-ie9 .details li.c img {
-          width: auto; }
 
 .swatches {
   padding: 2em; }
@@ -595,3 +600,5 @@ button {
   padding-left: 24em; }
   .lt-ie9 .swatches {
     padding-left: 30em; }
+  .lt-ie8 .swatches {
+    width: 64%; }

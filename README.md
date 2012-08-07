@@ -1,57 +1,8 @@
-# [HTML5 Boilerplate](http://html5boilerplate.com)
+# Style Prototype
 
-HTML5 Boilerplate is a professional front-end template that helps you build fast, robust, adaptable, and future-proof websites. Spend more time developing and less time reinventing the wheel.
-
-This project is the product of many years of iterative development and combined community knowledge. It does not impose a specific development philosophy or framework, so you're free to architect your code in the way that you want.
+A style prototype is a single HTML page which outlines site colors, typography, photographic style, button styles, rollovers, and other necessary elements to establish design direction. In a sense, it is a safety measure intended to avoid rehashing (or completely scrapping) site designs in which hours of time and budget have been invested.
 
 
-## How to Build
+Samantha Warren introduced us to the great idea of presenting designed web elements to clients before creating full site comps. She refers to her Photoshop-based creations as [Style Tiles](http://styletil.es), and they contain most of the same elements that a Style Prototype typically would. However, a Style Prototype takes things one step further into the medium of the web. Rather than present the client a JPG of your Photoshop document, show them a responsive HTML/CSS Style Prototype instead.
 
-1. Open "Terminal"
-2. Next, simply type: ant build
-3. Now, look in your project folder and see that there is a newly created "publish" directory within your project. Inside, you will find your minified CSS, JS and along with duplicates of the files from your original directory. This new set of files within "publish" is your production code.
-
-## Build Options
-
-**ant build**     # minor html optimizations (extra quotes removed). inline script/style minified (default)
-
-**ant buildkit**  # all html whitespace retained. inline script/style minified
-
-**ant basics**    # same as build minus the basic html minfication
-
-**ant minify**    # same as build plus full html minification
-
-**ant text**      # same as build but without image (png/jpg) optimizing
-
-
-## Environments
-
-**dev** - Increases build number, cleans and copies the build and optimises any images if the target originally did
-
-**test** - Runs everything that the original target did, however it does not strip the console.log or profiling parts
-
-**prod (default)** - Runs everything the original target did
-
-To run it you simply use ant <target> -Denv=<environment>
-
-ant build -Denv=dev
-
-
-## Wordpress integration
-
-Check out Jay George's wordpress screencast videos: http://www.jaygeorge.co.uk/1-html5-buildscript-wordpress-1/
-
-Using the build script on a Wordpress theme introduces a significant problem: Wordpress themes are installed to a website's /wp-content/themes/<theme-name> directory while the build script's output references the minified/concatenated files in a relative URI as js/scripts-xxxx.min.js. Therefore, output of the build script will reference files in the wrong location.
-
-To make the build script output files that reference the correct url /wp-content/themes/<theme-name>/js/scripts-xxxx.js, the build.xml file must be modified. Edit the 2 regular expressions near lines 599 (for js) and 699 (for css) to include the Wordpress PHP that dynamically references the theme's folder: (the line to add is indented)
-
-<replaceregexp match="&lt;!-- scripts concatenated [\d\w\s\W]*?!-- 
-end ((scripts)|(concatenated and minified scripts))--&gt;" 
-replace="&lt;script src='
-    &lt;?php bloginfo('template_url'); ?&gt;/
-${dir.js}/scripts-${build.number}.min.js\'&gt;&lt;/script&gt;" flags="m">
-
-
-## Anything Else
-
-[Build Script Docs](http://html5boilerplate.com/docs/Build-script/)
+[See it in action here.](http://sparkbox.github.com/style-prototype/)

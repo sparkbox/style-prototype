@@ -1,0 +1,19 @@
+/* HEADER & LOGO */
+header {
+  width: 100%;
+  background-color: black;
+  text-align:center;}
+  header a {
+    font-size:2em;
+    color:#FFF;
+    font-weight:700;
+    text-decoration: none;
+  }
+  header .wrapper {
+    position: relative;
+    max-width: 35em;
+    padding: .4em 0; }
+  header img {
+    display: block;
+    max-width: 154px;
+    margin: 0 auto; }

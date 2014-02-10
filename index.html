@@ -1,102 +1,77 @@
 <!doctype html>
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-
-<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">  
-  <link rel="stylesheet" href="css/base.css">
-  <!--[if lte IE 8]>
-  <link rel="stylesheet" href="css/fallback.css">
-  <![endif]-->
-  <script type="text/javascript" src="http://use.typekit.com/sse5unk.js"></script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-  <script src="js/libs/modernizr-2.5.2.min.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">  
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="css/color.css">
+    <link rel="stylesheet" href="css/detail.css">
 </head>
 <body>
-  <!-- Prompt IE 6 users to install Chrome Frame. -->
-  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+<!-- If you feel that you want to edit the header, please use header.css -->
+    <header>
 
-		<header>
-	
-				<a href="http://www.seesparkbox.com" title="Go to seesparkbox.com" class="wrapper">
+        <a href="#" title="Your Team Name" class="wrapper">
 
-					<img src="img/sparkbox-logo.png" alt="Sparkbox Logo" />
+            First Last - Team Name
 
-				</a><!-- END .wrapper -->
+        </a><!-- END .wrapper -->
 
-		</header>
-	
-	<div class="main">
+    </header>
+    
+    <div class="main">
 
-		<div class="wrapper">
+        <div class="wrapper">
 
-			<div class="typography">
-        <h1>Hey There</h1>
-        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Etiam porta sem malesuada magna mollis euismod. Maecenas sed diam eget risus varius blandit sit amet non.</p>
-        <ul class="icons">
-          <li><img src="img/icon-education.png" /></li>
-          <li><img src="img/icon-team.png" /></li>
-          <li><img src="img/icon-bacon.png" /></li>
-        </ul>
-			</div><!-- END .typography -->
-	
-			<div class="swatches">
-	
-				<div class="colors">
-					<ul>
-						<!--
-						To add more colors:
-						1. add an <li> here with a class of the color's name
-						2. add colors to the palette in _variables.scss
-						3. change $num-colors in _variables.scss
-						4. apply background color in _smallest.scss
-						-->
-						<li class="primary">&nbsp;</li>
-						<li class="secondary">&nbsp;</li>
-						<li class="neutral">&nbsp;</li>
-					</ul>
-				</div><!-- END .colors -->
-	
-				<div class="details">
-					<ul>
-						<li class="a">
-              <img src="img/monitor.png" alt="Monitor icon" />
-						</li>
-						<li class="b">
-              <img src="img/juggler.png" alt="Man juggling life" />
-						</li>
-						<li class="c">
-							<img src="img/main-image.png" alt="Happy devices" />
-						</li>
-					</ul>
-				</div><!-- END .details -->
-	
-			</div><!-- END .swatches -->
+            <!-- To edit the way the typography displays, edit typography.css -->
 
-		</div><!-- END .wrapper -->
+            <div class="typography">
+                <h1>Hey There</h1>
+                <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Etiam porta sem malesuada magna mollis euismod. Maecenas sed diam eget risus varius blandit sit amet non.</p>
+                <ul class="icons">
+                    <li><img src="img/icon-education.png" /></li>
+                    <li><img src="img/icon-team.png" /></li>
+                    <li><img src="img/icon-bacon.png" /></li>
+                </ul>
+            </div><!-- END .typography -->
 
-	</div><!-- END .main -->
+            <div class="swatches">
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
-  <script src="js/libs/util.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/script.js"></script>
-  <script>
-    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-    s.parentNode.insertBefore(g,s)}(document,'script'));
-  </script>
-  <!--[if lt IE 7 ]>
-    <script defer src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
-    <script defer>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
-  <![endif]-->
+                <div class="colors">
+                    <ul>
+                        <!--
+                        To add more colors:
+                        1. add an <li> here with a class of the color's name
+                        2. add colors and class to color.css -->
+                        <li class="primary">&nbsp;</li>
+                        <li class="secondary">&nbsp;</li>
+                        <li class="neutral">&nbsp;</li>
+                    </ul>
+                </div><!-- END .colors -->
+
+                <!-- To edit the details blocks, edit detail.css -->
+                <div class="details">
+                    <ul>
+                        <li class="a">
+                            <img src="img/monitor.png" alt="Monitor icon" />
+                        </li>
+                        <li class="b">
+                            <img src="img/juggler.png" alt="Man juggling life" />
+                        </li>
+                        <li class="c">
+                            <img src="img/main-image.png" alt="Happy devices" />
+                        </li>
+                    </ul>
+                </div><!-- END .details -->
+
+            </div><!-- END .swatches -->
+
+        </div><!-- END .wrapper -->
+
+    </div><!-- END .main -->
 </body>

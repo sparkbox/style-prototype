@@ -1,0 +1,15 @@
+/* Image blocks*/
+.details .a {
+    /* monitor icon */
+    margin-right: 1%;
+    background: black; }
+.details .b {
+    /* juggler */
+    margin-left: 1%;
+    background: #f1592a; }
+.details .c {
+    /* happy devices */
+    width: 100%;
+    background: #13a89e;
+    padding: 2em 0;
+    text-align: center; }

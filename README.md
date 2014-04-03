@@ -21,6 +21,6 @@ Samantha Warren introduced us to the great idea of presenting designed web eleme
 
 ## Don't want to build the project?
 
-Fine. We won't hold it against you! Download the project with Sass already compiled [here](https://github.com/sparkbox/style-prototype/releases). Just download the latest .zip release, and open `.index.html` in your browser.
+Fine. We won't hold it against you! Download the project with Sass already compiled [here](https://github.com/sparkbox/style-prototype/releases). Just download the latest .zip release, and open `index.html` in your browser.
 
 But you should probably consider [learning Sass](http://sass-lang.com/guide). Just sayin'! Want a deeper dive? Check out one of [our workshops](http://buildright.io/).
